@@ -6,8 +6,10 @@ import { InputGroup, Button, Icon } from '@blueprintjs/core';
 const ProfileWrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 1200px;
+  width: calc(100vw - 100px);
 `;
+
+const H2 = styled.h2`@media (max-width: 700px) {font-size: 16px !important;}`;
 
 const ProfileInputGroup = styled.div`
   display: flex;
@@ -32,21 +34,29 @@ const Divider = styled.div`border-left: 1px solid #b9bcbd;`;
 const ProfileOutputGroupCard = styled.div`
   display: flex;
   justify-content: center;
-  width: 400px;
+  width: 100%;
   text-align: center;
 `;
 
-const ProfileOutputGroupCardContent = styled.div`margin-top: 50px;`;
+const ProfileOutputGroupCardContent = styled.div`
+  width: 100%;
+  margin-top: 50px;
+`;
 
 const StyledIcon = styled(Icon)`
   position: absolute;
   background-color: white;
   margin-top: -65px;
   font-size: 100px !important;
+
+  @media (max-width: 700px) {
+    margin-top: -50px;
+    font-size: 70px !important;
+  }
 `;
 
 const Skeleton = styled.div`
-  width: 300px;
+  width: 100%;
   height: ${props => `${props.height}px`};
   border-color: rgba(167, 182, 194, 0.2) !important;
   border-radius: 2px;
@@ -114,7 +124,7 @@ class Profile extends Component {
     return (
       <ProfileWrapper className="pt-card pt-elevation-4">
         <ProfileInputGroup>
-          <h2 id="user-info">User information</h2>
+          <H2 id="user-info">User information</H2>
           <br />
           <Input
             className="pt-large"
