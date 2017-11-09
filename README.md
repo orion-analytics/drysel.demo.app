@@ -1,4 +1,4 @@
-Please Note : All credit in developing this app goes to ["sandiiarov"](https://github.com/sandiiarov). I have cloned it from [HERE](https://github.com/sandiiarov/drysel-demo-app).
+__Please Note__ : All credit in developing this app goes to ["sandiiarov"](https://github.com/sandiiarov). I have cloned it from [HERE](https://github.com/sandiiarov/drysel-demo-app). In order to install and run, please follow following steps. This app assumes that you already have installed the latest versions of _npm_ and _nodejs_ on your machine.
 
 ```sh
 $ npm install
